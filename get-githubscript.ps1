@@ -4,7 +4,8 @@ $accessToken = "Insert_ya_own"
 # Replace scriptPath with the path to the script you want to download.  Retrieve this from the github repo's individual script page by clicking on the copy path button.
 # Example script page:  https://github.com/COMPANY/DATA/SCRIPT_NAME.ps1
 
-$scriptPath = "COMPANY/DATA/SCRIPT_NAME.ps1"
+#you should set this up in ninja as a script variable
+$scriptPath = $env:githubscriptpath
 
 # Split script path into directory and filename
 $scriptFileName = Split-Path $scriptPath -Leaf
