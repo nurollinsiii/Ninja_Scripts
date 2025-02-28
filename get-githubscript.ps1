@@ -1,4 +1,4 @@
-#for ninja
+#for ninja testpush
 #you should totally env variable this guy below
 $accessToken = "Insert_ya_own"
 
