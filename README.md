@@ -8,3 +8,7 @@ Public repo for my anonymized Ninja Scripps
 
 #RAID check
 1. write instructions :P
+
+
+#Windows11 scripts 
+1. write instructions
