@@ -4,8 +4,8 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="RM_DG2_5r83rVcYBaJv3-34" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-435" y="280" width="735" height="330" as="geometry" />
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-36" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="240" y="150" width="630" height="750" as="geometry" />
         </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RM_DG2_5r83rVcYBaJv3-1" target="RM_DG2_5r83rVcYBaJv3-3">
           <mxGeometry relative="1" as="geometry" />
@@ -44,7 +44,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-7" value="&lt;div&gt;&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;Get-Windows11UpgradeCompat.ps1&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Breakdown: This script checks to see if the device meets the criteria to upgrade to Windows 11 or not.&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Must have at least 7.8GB free of Memory&lt;/li&gt;&lt;li&gt;Must have 200GB at least OS disk&lt;/li&gt;&lt;li&gt;Must have at least 64GB free on OS disk&lt;/li&gt;&lt;li&gt;Must be at least 4 years old or newer&lt;/li&gt;&lt;/ul&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="580" y="10" width="260" height="250" as="geometry" />
+          <mxGeometry x="580" y="200" width="260" height="250" as="geometry" />
         </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-9" value="END" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="30" y="210" width="120" height="60" as="geometry" />
@@ -56,16 +56,6 @@
         </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-19" value="$TRUE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RM_DG2_5r83rVcYBaJv3-18">
           <mxGeometry x="-0.2883" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="RM_DG2_5r83rVcYBaJv3-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RM_DG2_5r83rVcYBaJv3-12" target="RM_DG2_5r83rVcYBaJv3-23">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="190" y="430" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="RM_DG2_5r83rVcYBaJv3-21" value="$FALSE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RM_DG2_5r83rVcYBaJv3-20">
-          <mxGeometry x="0.1947" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -84,18 +74,31 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-17" value="&lt;div&gt;&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;Confirm-Windows11UpdateLogic_stub.ps1&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Breakdown: This script is looking for everything to return a $TRUE, and if it does, then it will actually download and run the script to update to windows 11 &amp;amp; run it.&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Included CHECK&lt;/li&gt;&lt;ul&gt;&lt;li&gt;not in the exclusion list&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Eligible CHECK&lt;/li&gt;&lt;ul&gt;&lt;li&gt;os = windows 10&lt;/li&gt;&lt;li style=&quot;&quot;&gt;should we upgrade CF is either YES, or Needs determination &amp;amp; over-ride is YES&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Org Enablement CHECK&lt;/li&gt;&lt;ul&gt;&lt;li&gt;makes sure Org CF for Windows 11 update is yes&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Valid Schedule CHECK&lt;/li&gt;&lt;ul&gt;&lt;li&gt;check local JSON file for date &amp;amp; if within 1 hour return a $TRUE&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="580" y="280" width="260" height="430" as="geometry" />
+          <mxGeometry x="580" y="460" width="260" height="430" as="geometry" />
         </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-22" value="Update to Windows 11&lt;div&gt;&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;Invoke-Windows11UpdateWithUpdateAssistance.ps1&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="262.5" y="660" width="245" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RM_DG2_5r83rVcYBaJv3-12" target="RM_DG2_5r83rVcYBaJv3-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-21" value="$FALSE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RM_DG2_5r83rVcYBaJv3-20">
+          <mxGeometry x="0.1947" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-34" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-570" y="280" width="789.9999999999999" height="330" as="geometry" />
+        </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-23" value="Set Windows Update Time&lt;br&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;2 hours&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="390" width="120" height="80" as="geometry" />
+          <mxGeometry x="-37.9591836734694" y="390" width="128.97959183673467" height="80" as="geometry" />
         </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-24" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=22;endSize=2.97;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RM_DG2_5r83rVcYBaJv3-23" target="RM_DG2_5r83rVcYBaJv3-26">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-120" y="422.5" as="sourcePoint" />
-            <mxPoint x="-50" y="430" as="targetPoint" />
+            <mxPoint x="-231.42857142857144" y="422.5" as="sourcePoint" />
+            <mxPoint x="-156.1904761904762" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-25" value="Process" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RM_DG2_5r83rVcYBaJv3-24">
@@ -104,10 +107,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-26" value="&lt;div&gt;&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;Set-Windows11UpdateTime.ps1&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Breakdown: The popup will trigger if the scheduled time is more than 4 hours past the current time or no scheduled time is found.&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Function - Show-Windows11ScheduleDialog&lt;/li&gt;&lt;ul&gt;&lt;li&gt;simply shows the dialog for a user to pick a date/time&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Function - Get-Windows11UpgradeScheudle&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Gets the local JSON file &amp;amp; outputs the date/time&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;div&gt;NOTE: This popup display times out every 1 hour and 45 minutes.&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-320" y="285" width="260" height="290" as="geometry" />
+          <mxGeometry x="-446.3945578231293" y="285" width="279.4557823129251" height="290" as="geometry" />
         </mxCell>
-        <mxCell id="RM_DG2_5r83rVcYBaJv3-35" value="Compound Condition OR Scheduled Automation?" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-50" y="310" width="300" height="60" as="geometry" />
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-35" value="&lt;b&gt;Compound Condition OR Scheduled Automation?&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-156.1904761904762" y="285" width="322.44897959183675" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-38" value="&lt;b&gt;Compound Condition OR Scheduled Automation?&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="444.9995238095238" y="150" width="322.44897959183675" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
