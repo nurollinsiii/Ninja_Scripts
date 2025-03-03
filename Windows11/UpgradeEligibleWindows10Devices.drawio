@@ -106,6 +106,9 @@
         <mxCell id="RM_DG2_5r83rVcYBaJv3-26" value="&lt;div&gt;&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;Set-Windows11UpdateTime.ps1&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Breakdown: The popup will trigger if the scheduled time is more than 4 hours past the current time or no scheduled time is found.&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Function - Show-Windows11ScheduleDialog&lt;/li&gt;&lt;ul&gt;&lt;li&gt;simply shows the dialog for a user to pick a date/time&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Function - Get-Windows11UpgradeScheudle&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Gets the local JSON file &amp;amp; outputs the date/time&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;div&gt;NOTE: This popup display times out every 1 hour and 45 minutes.&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="-320" y="285" width="260" height="290" as="geometry" />
         </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-35" value="Compound Condition OR Scheduled Automation?" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="310" width="300" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
