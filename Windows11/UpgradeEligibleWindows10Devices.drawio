@@ -112,7 +112,7 @@
         <mxCell id="RM_DG2_5r83rVcYBaJv3-35" value="&lt;b&gt;Compound Condition OR Scheduled Automation?&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-156.1904761904762" y="285" width="322.44897959183675" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="RM_DG2_5r83rVcYBaJv3-38" value="&lt;b&gt;Compound Condition OR Scheduled Automation?&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-38" value="&lt;b&gt;Compound Condition&lt;/b&gt;&amp;nbsp;- Runs every 30 minutes looking for a &quot;Overall Status: True&quot; to trigger the invoke upgrade command. Resets after 4 hours." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="444.9995238095238" y="150" width="322.44897959183675" height="60" as="geometry" />
         </mxCell>
       </root>
