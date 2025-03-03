@@ -10,8 +10,24 @@
         <mxCell id="RM_DG2_5r83rVcYBaJv3-1" value="Start" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="330" y="60" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RM_DG2_5r83rVcYBaJv3-3" target="RM_DG2_5r83rVcYBaJv3-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-11" value="The device IS NOT Eligible" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RM_DG2_5r83rVcYBaJv3-10">
+          <mxGeometry x="0.2333" y="-3" relative="1" as="geometry">
+            <mxPoint x="19" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RM_DG2_5r83rVcYBaJv3-3" target="RM_DG2_5r83rVcYBaJv3-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-14" value="The device IS eligible" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RM_DG2_5r83rVcYBaJv3-13">
+          <mxGeometry x="-0.2" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-3" value="Does Eligible check for Windows 11 updates" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="330" y="200" width="120" height="80" as="geometry" />
+          <mxGeometry x="320" y="200" width="130" height="80" as="geometry" />
         </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-6" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=22;endSize=2.97;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RM_DG2_5r83rVcYBaJv3-3" target="RM_DG2_5r83rVcYBaJv3-7">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -19,8 +35,33 @@
             <mxPoint x="530" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-8" value="Process" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RM_DG2_5r83rVcYBaJv3-6">
+          <mxGeometry x="-0.3632" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="RM_DG2_5r83rVcYBaJv3-7" value="&lt;ul&gt;&lt;li&gt;Must have at least 7.8GB free of Memory&lt;/li&gt;&lt;li&gt;Must have 200GB at least OS disk&lt;/li&gt;&lt;li&gt;Must have at least 64GB free on OS disk&lt;/li&gt;&lt;li&gt;Must be at least 4 years old or newer&lt;/li&gt;&lt;/ul&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="580" y="140" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-9" value="END" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-12" value="Run Confirm Windows 11 update logic&lt;br&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;30 minutes&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="380" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=22;endSize=2.97;exitX=1;exitY=0.375;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RM_DG2_5r83rVcYBaJv3-12" target="RM_DG2_5r83rVcYBaJv3-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="410" as="sourcePoint" />
+            <mxPoint x="540" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-16" value="Process" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RM_DG2_5r83rVcYBaJv3-15">
+          <mxGeometry x="-0.3632" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RM_DG2_5r83rVcYBaJv3-17" value="&lt;ul&gt;&lt;li&gt;Included CHECK&lt;/li&gt;&lt;ul&gt;&lt;li&gt;not in the exclusion list&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Eligible CHECK&lt;/li&gt;&lt;ul&gt;&lt;li&gt;os = windows 10&lt;/li&gt;&lt;li style=&quot;&quot;&gt;should we upgrade CF is either YES, or Needs determination &amp;amp; over-ride is YES&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Org Enablement CHECK&lt;/li&gt;&lt;ul&gt;&lt;li&gt;makes sure Org CF for Windows 11 update is yes&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Valid Schedule CHECK&lt;/li&gt;&lt;ul&gt;&lt;li&gt;check local JSON file for date &amp;amp; if within 1 hour return a $TRUE&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="580" y="280" width="260" height="240" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
