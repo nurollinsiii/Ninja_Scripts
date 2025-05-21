@@ -1,6 +1,6 @@
 $ESXiHost = Ninja-Property-Get vmwaredelegatehostip
 $Username = "root" # or your ESXi username
-$KeyPath = "$env:SystemDrive\ImageNet\ssh_key\esxi_key"
+$KeyPath = "$env:SystemDrive\your_path\ssh_key\esxi_key"
 $hostname = ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa -i $KeyPath "${Username}@${ESXiHost}" "esxcli system hostname get"
 $network = ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa -i $KeyPath "${Username}@${ESXiHost}" "esxcli network ip interface ipv4 get"
 $hostname = $hostname | Select-String "Fully Qualified Domain Name:"
